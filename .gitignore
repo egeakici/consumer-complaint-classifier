@@ -1,0 +1,19 @@
+# Model artifacts
+saved_models/
+*.pkl
+
+# Raw and processed data
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/

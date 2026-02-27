@@ -1,0 +1,26 @@
+import os
+
+BASE_DIR         = os.path.dirname(os.path.abspath(__file__))
+SAVED_MODELS_DIR = os.path.join(BASE_DIR, "saved_models")
+DATA_DIR         = os.path.join(BASE_DIR, "..", "data", "processed")
+
+INPUT_CSV        = os.path.join(DATA_DIR, "dataset_logistic_regression.csv")
+MODEL_PATH       = os.path.join(SAVED_MODELS_DIR, "model.pkl")
+VECTORIZER_PATH  = os.path.join(SAVED_MODELS_DIR, "vectorizer.pkl")
+X_TEST_PATH      = os.path.join(SAVED_MODELS_DIR, "x_test.pkl")
+Y_TEST_PATH      = os.path.join(SAVED_MODELS_DIR, "y_test.pkl")
+
+TEST_SIZE    = 0.2
+RANDOM_STATE = 42
+
+MIN_DF       = 10
+NGRAM_RANGE  = (1, 2)
+
+LEARNING_RATE = 0.1
+MAX_ITER      = 50
+BATCH_SIZE    = 512
+C             = 100.0
+LR_DECAY      = 0.95
+
+FLASK_HOST    = "0.0.0.0"
+FLASK_PORT    = 5001
